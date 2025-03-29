@@ -15,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 JavaScript is a powerful, high-level programming language primarily used for building interactive and dynamic websites. This repository is a place to document key concepts and examples, track my progress, and share resources related to JavaScript. It's intended to be an easy reference for anyone looking to understand the basics or dive deeper into more advanced topics.
 
 Topics Covered
+
 Here are some of the key topics covered in this repository:
 
 JavaScript Basics:
@@ -75,10 +77,10 @@ Performance optimization
 Getting Started
 To get started with this repository, simply clone it to your local machine:
 
-bash
-Copy
-git clone https://github.com/yourusername/javascript-notes.git
+https://github.com/kawindu2002/Javascript_Notes.git
+
 Usage
+
 Once you have the repository cloned, you can explore the various notes and examples within each file. Most of the notes include examples and explanations of core concepts, and you can run the JavaScript code snippets directly in your browser's developer console or in any JavaScript runtime environment.
 
 For example, to test a specific function or concept:
@@ -92,6 +94,7 @@ Go to the "Console" tab.
 Copy and paste the JavaScript code into the console to run it.
 
 Contributing
+
 Contributions are welcome! If you'd like to improve the notes or add new content, feel free to open an issue or submit a pull request. Please ensure that any changes follow the existing style and include clear explanations for new concepts.
 
 Steps to contribute:
