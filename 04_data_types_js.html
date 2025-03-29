@@ -7,21 +7,143 @@
 <body>
     <script>
 
-        // DATA TYPES
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // # Primitive Data Types
+        //
         //     1) Number
+        //
+        //         A Number in JavaScript represents both integer and floating-point numbers.
+        //
+        //         let num1 = 42; // An integer
+        //         let num2 = 3.14; // A floating-point number
+        //
+        //         console.log(num1); // Output: 42
+        //         console.log(num2); // Output: 3.14
+        //
         //     2) String
+        //
+        //         A String is a sequence of characters used for text.
+        //
+        //         let str1 = "Hello, World!"; // Double quotes
+        //         let str2 = 'JavaScript is awesome!'; // Single quotes
+        //
+        //         console.log(str1); // Output: Hello, World!
+        //         console.log(str2); // Output: JavaScript is awesome!
+        //
         //     3) Boolean
+        //
+        //         A Boolean represents one of two values: true or false.
+        //
+        //         let isActive = true;
+        //         let isComplete = false;
+        //
+        //         console.log(isActive); // Output: true
+        //         console.log(isComplete); // Output: false
+        //
         //     4) null
+        //
+        //         null is a special value that represents the absence of any object value.
+        //
+        //         let noValue = null;
+        //         console.log(noValue); // Output: null
+        //
         //     5) undefined
-        //     5) Symbol
-        //     5) BigInt
+        //
+        //         undefined represents an uninitialized variable or a missing value.
+        //
+        //         let uninitialized;
+        //         console.log(uninitialized); // Output: undefined
+        //
+        //         let obj = {};
+        //         console.log(obj.someProperty); // Output: undefined (property doesn't exist)
+        //
+        //     6) Symbol
+        //
+        //         A Symbol is a unique and immutable data type often used as an identifier for object properties.
+        //
+        //         let symbol1 = Symbol("description");
+        //         let symbol2 = Symbol("description");
+        //
+        //         console.log(symbol1); // Output: Symbol(description)
+        //         console.log(symbol1 === symbol2); // Output: false (symbols are unique)
+        //
+        //     7) BigInt
+        //
+        //         BigInt is a special type for representing large integers that exceed the size limitations of Number.
+        //
+        //         let bigIntValue = 1234567890123456789012345678901234567890n;
+        //
+        //         console.log(bigIntValue); // Output: 1234567890123456789012345678901234567890n
+        //         console.log(typeof bigIntValue); // Output: bigint
         //
         // # Object Data Types
+        //
         //     6) Object
+        //
+        //         An Object is a collection of key-value pairs, where keys are strings (or symbols), and values can be any data type.
+        //
+        //         let person = {
+        //             name: "Alice",
+        //             age: 30,
+        //             isStudent: false
+        //         };
+        //
+        //         console.log(person.name); // Output: Alice
+        //         console.log(person.age); // Output: 30
+        //         console.log(person.isStudent); // Output: false
+        //
         //     7) Array
+        //
+        //         An Array is an ordered collection of values, where values can be of any data type.
+        //
+        //         let fruits = ["Apple", "Banana", "Orange"];
+        //
+        //         console.log(fruits[0]); // Output: Apple
+        //         console.log(fruits[1]); // Output: Banana
+        //         console.log(fruits.length); // Output: 3
+        //
         //     8) Function
+        //
+        //         A Function is a block of code that can be called and executed when needed.
+        //
+        //         function greet(name) {
+        //             return `Hello, ${name}!`;
+        //         }
+        //
+        //         console.log(greet("John")); // Output: Hello, John!
+        //         console.log(greet("Alice")); // Output: Hello, Alice!
+
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // Print variables and get their type
+
+            // var a = 10;
+            // console.log(a);
+            // We can print variable a.
+            //
+            // console.log(typeof a);
+            // We can get the type of variable a.
+
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // (1)int (2)num = (3)10;
+
+        // (1) int is the variable type.Not the data type.Data type is the type of the value.Not the variable type.
+        // (3) Type of this value is called data type.
+
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // HOW VAR HANDLES THE DATA TYPE
+
+            // var b = 10;
+            // console.log(typeOf(b)); //number
+            // b = "hello";
+            // console.log(typeOf(b)); //String
+
+            // Javascript athule thiyen variables ek type ekkt limit(bind) wel nh.. Ithn ek loosely typed.
+            // We can assign vbalues of different tpe to the same variable without expicitly declaring its type.
+            // Python is also a loosely typed language.
 
     </script>
 </body>
