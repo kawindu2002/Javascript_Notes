@@ -13,7 +13,7 @@
              console.log(): Logs general output.
              console.error(): Logs error messages.
              console.warn(): Logs warning messages.
-             console.info(): Logs informational messages.
+             console.info(): Logs informational messages to the console with an info icon.
              console.debug(): Logs debug information.
              console.table(): Displays data in a tabular format.
              console.assert(): Checks if a condition is true, logs an error if false.
@@ -21,6 +21,7 @@
              console.group() / console.groupEnd(): Creates collapsible groups of logs.
              console.time() / console.timeEnd(): Measures the time between calls.
              console.trace(): Logs a stack trace for function calls.
+             console.clear(): clear the console
 
          The JavaScript console is a built-in tool in modern web browsers that allows developers to output information, debug code, and interact with JavaScript directly.
          The console provides several useful functions for logging and debugging, making it an essential tool for web development.
@@ -29,7 +30,7 @@
 
          1. console.log()
          console.log() is the most frequently used method to log messages, variables, and outputs to the console. It's often used for debugging purposes.
-
+         Mew production ywddi ain krnn ona.. Use krnn debug wldi withrai.
          Example:
 
              let message = "Hello, world!";
@@ -42,6 +43,7 @@
              console.log("The sum is:", a + b);  // Output: The sum is: 30
 
          2. console.error()
+         console eke apit error ekk widiht pennw.
          console.error() logs an error message to the console, often displayed in red (in most browsers), which is useful for debugging errors.
 
          Example:
@@ -57,6 +59,7 @@
              }
 
          3. console.warn()
+         console eke apit warning ekk widiht pennw.E code eken mkkhri issue ekk enn puluwn kiyl warn ekk denn use krnw.
          console.warn() outputs a warning message, usually displayed in yellow or with a warning symbol. It's useful for indicating potential problems or issues.
 
          Example:
@@ -64,6 +67,7 @@
          console.warn("This is a warning!");  // Output: This is a warning! (in yellow)
 
          4. console.info()
+         console eke apit normal log ek wge appear krnw.
          console.info() is used to log informational messages. In most browsers, it appears similar to console.log(), but semantically it’s meant for logging general information.
 
          Example:
@@ -80,6 +84,15 @@
              // Output: Debugging data: {value: 42, status: "active"}
 
          6. console.table()
+         console eke apit table ekk widiht pennw.Mewt athult dnn use krnne Arrays,key-value pairs wge dewl.
+             let people = [
+                 { name: "Alice", age: 25, occupation: "Engineer" },
+                 { name: "Bob", age: 30, occupation: "Designer" },
+                 { name: "Charlie", age: 35, occupation: "Manager" }
+             ];
+
+         console.table(people);
+
          console.table() is useful for displaying tabular data in a neat table format. It can take an array or object and display it in a readable, structured way.
 
          Example with an array:
