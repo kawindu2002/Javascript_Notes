@@ -2,12 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Javascript 01</title>
+    <title>Javascript 05</title>
 </head>
 <body>
     <script src="../script/script.js"></script>
     <script>
-        alert("Hello World");
+        /**
+         Summary of Console Methods:
+
+             console.log(): Logs general output.
+             console.error(): Logs error messages.
+             console.warn(): Logs warning messages.
+             console.info(): Logs informational messages.
+             console.debug(): Logs debug information.
+             console.table(): Displays data in a tabular format.
+             console.assert(): Checks if a condition is true, logs an error if false.
+             console.count(): Logs the count of how many times a label has been called.
+             console.group() / console.groupEnd(): Creates collapsible groups of logs.
+             console.time() / console.timeEnd(): Measures the time between calls.
+             console.trace(): Logs a stack trace for function calls.
+
+         The JavaScript console is a built-in tool in modern web browsers that allows developers to output information, debug code, and interact with JavaScript directly.
+         The console provides several useful functions for logging and debugging, making it an essential tool for web development.
+
+         Here are the most commonly used console methods and how to use them:
+
+         1. console.log()
+         console.log() is the most frequently used method to log messages, variables, and outputs to the console. It's often used for debugging purposes.
+
+         Example:
+
+             let message = "Hello, world!";
+             console.log(message);  // Output: Hello, world!
+
+         You can also log multiple values in a single console.log() call:
+
+             let a = 10;
+             let b = 20;
+             console.log("The sum is:", a + b);  // Output: The sum is: 30
+
+         2. console.error()
+         console.error() logs an error message to the console, often displayed in red (in most browsers), which is useful for debugging errors.
+
+         Example:
+
+             console.error("Something went wrong!");  // Output: Something went wrong! (in red)
+
+         You can also use it to log error objects:
+
+             try {
+                 throw new Error("This is an error!");
+             } catch (error) {
+                 console.error(error);  // Output: Error: This is an error!
+             }
+
+         3. console.warn()
+         console.warn() outputs a warning message, usually displayed in yellow or with a warning symbol. It's useful for indicating potential problems or issues.
+
+         Example:
+
+         console.warn("This is a warning!");  // Output: This is a warning! (in yellow)
+
+         4. console.info()
+         console.info() is used to log informational messages. In most browsers, it appears similar to console.log(), but semantically it’s meant for logging general information.
+
+         Example:
+
+            console.info("This is some useful information.");  // Output: This is some useful information.
+
+         5. console.debug()
+         console.debug() is used for logging debugging information, and in some browsers, the output will be displayed in a debug or gray font color. It's similar to console.log(), but semantically intended for debugging.
+
+         Example:
+
+             let debugData = { value: 42, status: "active" };
+             console.debug("Debugging data:", debugData);
+             // Output: Debugging data: {value: 42, status: "active"}
+
+         6. console.table()
+         console.table() is useful for displaying tabular data in a neat table format. It can take an array or object and display it in a readable, structured way.
+
+         Example with an array:
+
+             let fruits = ["Apple", "Banana", "Orange"];
+             console.table(fruits);
+
+             // Output in the console:
+             // ┌─────────┬─────────┐
+             // │ (index) │ Values  │
+             // ├─────────┼─────────┤
+             // │    0    │ "Apple" │
+             // │    1    │ "Banana"│
+             // │    2    │ "Orange"│
+             // └─────────┴─────────┘
+
+         Example with an object:
+
+             let person = { name: "John", age: 30, occupation: "Developer" };
+             console.table(person);
+
+             // Output in the console:
+             // ┌────────────┬───────────┐
+             // │   (index)  │  Values   │
+             // ├────────────┼───────────┤
+             // │    name    │  "John"   │
+             // │    age     │    30     │
+             // │ occupation │"Developer"│
+             // └────────────┴───────────┘
+
+         7. console.assert()
+         console.assert() checks if a given expression is true. If the expression evaluates to false, an error message is logged to the console. This is useful for performing assertions during debugging.
+
+         Example:
+
+             let number = 5;
+             console.assert(number > 10, "Number is less than 10!");
+             // Output: Assertion failed: Number is less than 10! (in red)
+
+         If the condition is true, no output will be displayed.
+
+         8. console.count()
+         console.count() logs the number of times a specific label or message has been logged.
+
+         Example:
+
+             console.count("Counter");  // Output: Counter: 1
+             console.count("Counter");  // Output: Counter: 2
+             console.count("Counter");  // Output: Counter: 3
+         Each time you call console.count() with the same label, it increments the count.
+
+         9. console.group() and console.groupEnd()
+         console.group() creates a collapsible group of related messages in the console. You can use console.groupEnd() to end the group.
+
+         Example:
+
+             console.group("User Information");
+             console.log("Name: John");
+             console.log("Age: 30");
+             console.log("Location: New York");
+             console.groupEnd();
+             // The output will be grouped together and can be expanded or collapsed.
+
+         10. console.time() and console.timeEnd()
+         console.time() starts a timer with a label, and console.timeEnd() stops the timer and logs the elapsed time in milliseconds. These are useful for performance measurement.
+
+         Example:
+
+             console.time("Timer");
+             // Simulating some work
+             for (let i = 0; i < 1000000; i++) {}
+             console.timeEnd("Timer");  // Output: Timer: Xms (where X is the elapsed time)
+
+         11. console.trace()
+         console.trace() logs a stack trace to the console, which helps trace where a function was called in your code.
+
+         Example:
+
+             function firstFunction() {
+                secondFunction();
+             }
+
+             function secondFunction() {
+                console.trace("Stack trace:");
+             }
+
+            firstFunction();
+            // Output: Stack trace: (shows the call stack in the console)
+        */
     </script>
 </body>
 </html>
