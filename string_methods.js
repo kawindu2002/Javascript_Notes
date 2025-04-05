@@ -40,3 +40,7 @@ mystr = "hello, World";
 mystr.search("World"); // 7(index of word starting with)
 mystr.search("kk"); // 0 (not found)
 
+mystr = "hello, World";
+mystr.slice(7,12); // World (from index 7 sit index 12 dkwa)
+
+
