@@ -43,4 +43,14 @@ mystr.search("kk"); // 0 (not found)
 mystr = "hello, World";
 mystr.slice(7,12); // World (from index 7 sit index 12 dkwa)
 
+mystr = "apple,mango,orange,pineappple";
+// Me string eke thiyen plthuru tik wen wenm arn array ekk athult dgnn on.
+
+mystr.split(","); //['apple', 'mango', 'orange', 'pineappple']
+mystr.split(""); //['a', 'p', 'p', 'l', 'e', ',', 'm', 'a', 'n', 'g', 'o', ',', 'o', 'r', 'a', 'n', 'g', 'e', '...
+
+
+
+
+
 
