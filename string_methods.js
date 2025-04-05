@@ -91,7 +91,6 @@ str.substring(7,12); // World
 // str.substr(2,4); // Consider index and character count
 // 'llo,'
 
-
 let x = "hello";
 x.toUpperCase();
 'HELLO'
@@ -110,3 +109,4 @@ str = " hello, World! ";
 ' hello, World! '
 str.trim()
 'hello, World!'
+
