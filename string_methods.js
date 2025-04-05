@@ -29,30 +29,6 @@
 // Mekedi Capital akuru wdinm compare krddi en agy wdiyi. (ASCII comparison)
 //     ex:- HII , Hello gththm HII wlin en agy wdi.
 
-let mystr = "A,B,C,D,E,F";
-mystr = mystr.replace(",","/");
-console.log(mystr); // A/B,C,D,E,F
-mystr = mystr.replaceAll(",","/");
-console.log(mystr); // A/B/C/D/E/F
-
-
-mystr = "hello, World";
-mystr.search("World"); // 7(index of word starting with)
-mystr.search("kk"); // 0 (not found)
-
-mystr = "hello, World";
-mystr.slice(7,12); // World (from index 7 sit index 12 dkwa)
-
-mystr = "apple,mango,orange,pineappple";
-// Me string eke thiyen plthuru tik wen wenm arn array ekk athult dgnn on.
-
-mystr.split(","); //['apple', 'mango', 'orange', 'pineappple']
-mystr.split(""); //['a', 'p', 'p', 'l', 'e', ',', 'm', 'a', 'n', 'g', 'o', ',', 'o', 'r', 'a', 'n', 'g', 'e', '...
-
-str = "hello, World";
-str.substring(7); // World
-str.substring(7,12); // World
-
 /**
  * ASCII
 
@@ -80,7 +56,41 @@ str.substring(7,12); // World
  -1
  s4.localeCompare(s3);
  1
-                         */
+ */
+
+let mystr = "A,B,C,D,E,F";
+mystr = mystr.replace(",","/");
+console.log(mystr); // A/B,C,D,E,F
+mystr = mystr.replaceAll(",","/");
+console.log(mystr); // A/B/C/D/E/F
+
+mystr = "hello, World";
+mystr.search("World"); // 7(index of word starting with)
+mystr.search("kk"); // 0 (not found)
+
+mystr = "hello, World";
+mystr.slice(7,12); // World (from index 7 sit index 12 dkwa)
+
+mystr = "apple,mango,orange,pineappple";
+// Me string eke thiyen plthuru tik wen wenm arn array ekk athult dgnn on.
+
+mystr.split(","); //['apple', 'mango', 'orange', 'pineappple']
+mystr.split(""); //['a', 'p', 'p', 'l', 'e', ',', 'm', 'a', 'n', 'g', 'o', ',', 'o', 'r', 'a', 'n', 'g', 'e', '...
+
+str = "hello, World";
+str.substring(7); // World
+str.substring(7,12); // World
+
+// str = "hello, World!";
+// 'hello, World!'
+
+// str.substring(2); // Consider a range
+// 'llo, World!'
+// str.substring(2,4);
+// 'll'
+// str.substr(2,4); // Consider index and character count
+// 'llo,'
+
 
 let x = "hello";
 x.toUpperCase();
@@ -90,3 +100,13 @@ let y = 'HELLO';
 x.toLowerCase();
 'hello'
 
+
+str = "hello, World!";
+'hello, World!'
+str.length
+13
+
+str = " hello, World! ";
+' hello, World! '
+str.trim()
+'hello, World!'
