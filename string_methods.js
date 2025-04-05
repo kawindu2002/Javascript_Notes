@@ -28,5 +28,3 @@ newStr1.localeCompare(newStr2); // 0
 newStr1.localeCompare(newStr3); // -1
 
 
-
-
