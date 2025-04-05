@@ -26,7 +26,7 @@
 //
 // newStr1.localeCompare(newStr2); // 0
 // newStr1.localeCompare(newStr3); // -1
-// Mekedi Capital akuru wdinm compare krddi en agy wdiyi.
+// Mekedi Capital akuru wdinm compare krddi en agy wdiyi. (Unicode comparison)
 //     ex:- HII , Hello gththm HII wlin en agy wdi.
 
 let mystr = "A,B,C,D,E,F";
@@ -53,7 +53,33 @@ str = "hello, World";
 str.substring(7); // World
 str.substring(7,12); // World
 
+/**
+ h - 104
+ e - 101
+ l - 108
+ o - 111
 
+ H - 72
+ I- 73
+
+ let s1 = "hello";
+ undefined
+ let s2 = "hello";
+ undefined
+ let s3 = "Hello";
+ undefined
+ let s4 = "HI";
+ undefined
+ s1.localeCompare(s2);
+ 0
+ s1.localeCompare(s3);
+ -1
+ s3.localeCompare(s4);
+ -1
+ s4.localeCompare(s3);
+ 1
+
+ */
 
 
 
