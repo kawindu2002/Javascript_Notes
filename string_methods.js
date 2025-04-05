@@ -26,6 +26,8 @@
 //
 // newStr1.localeCompare(newStr2); // 0
 // newStr1.localeCompare(newStr3); // -1
+// Mekedi Capital akuru wdinm compare krddi en agy wdiyi.
+//     ex:- HII , Hello gththm HII wlin en agy wdi.
 
 let mystr = "A,B,C,D,E,F";
 mystr = mystr.replace(",","/");
@@ -33,4 +35,8 @@ console.log(mystr); // A/B,C,D,E,F
 mystr = mystr.replaceAll(",","/");
 console.log(mystr); // A/B/C/D/E/F
 
+
+mystr = "hello, World";
+mystr.search("World"); // 7(index of word starting with)
+mystr.search("kk"); // 0 (not found)
 
