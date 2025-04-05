@@ -16,5 +16,14 @@
 // let starValue = str1.concat(str2);
 // console.log(starValue);
 
+// let mystr = "www.ijse.lk";
+// mystr.startsWith("www");
+//     true
+// mystr.startsWith("https");
+//     false
 
-
+// mystr.endsWith("com");
+//     false
+// mystr.endsWith("lk");
+//     true
+//
