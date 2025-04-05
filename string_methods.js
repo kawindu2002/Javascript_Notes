@@ -9,3 +9,12 @@
 //     44
 //
 
+// let str1 = "H";
+// let str2 = "ello";
+// let strValue = str1 + str2;
+
+// let starValue = str1.concat(str2);
+// console.log(starValue);
+
+
+
