@@ -49,6 +49,10 @@ mystr = "apple,mango,orange,pineappple";
 mystr.split(","); //['apple', 'mango', 'orange', 'pineappple']
 mystr.split(""); //['a', 'p', 'p', 'l', 'e', ',', 'm', 'a', 'n', 'g', 'o', ',', 'o', 'r', 'a', 'n', 'g', 'e', '...
 
+str = "hello, World";
+str.substring(7); // World
+str.substring(7,12); // World
+
 
 
 
